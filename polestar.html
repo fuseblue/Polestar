@@ -325,9 +325,11 @@
                 opacity: 0;
                 transition: .5s opacity;
             }
-            .fuse-border-right .tum-meta .exif.active {
-                opacity: 1;
-                transition: .5s opacity;
+            @media (min-width: 550px) {
+                .fuse-border-right .tum-meta .exif.active {
+                    opacity: 1;
+                    transition: .5s opacity;
+                }
             }
             .fuse-border-right .exif .iso i, .fuse-border-right .exif .aperture svg, .fuse-border-right .exif .exposure svg {
                 display: inline-block;
