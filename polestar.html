@@ -527,6 +527,11 @@
                 transition: opacity .5s;
                 opacity: 0;
             }
+            .fuse-credit {
+                position: absolute;
+                bottom: 15px;
+                left: 10px;
+            }
             /* Demo */
             .demo-note {
                 position: fixed;
@@ -690,7 +695,9 @@
                             {block:AskEnabled}
                             <li> <a target="_blank" href="/ask" class="fuse-ask-toggle ob-close-sidebar">{AskLabel}</a></li>
                             {/block:AskEnabled}
+                            {block:IfFuseCredit}
                             <li> <a target="_blank" href="http://fuseblue.com/themes/polestar/" class="fuse-ask-toggle ob-close-sidebar">Theme</a></li>
+                            {/block:IfFuseCredit}
                         </ul>
                     </nav>
                 {/block:IfNavigation}
