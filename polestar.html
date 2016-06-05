@@ -124,6 +124,9 @@
             /* Global */
             body {
                 font:14px "{select:Font}", Helvetica Neue, Arial, sans-serif;
+                {block:IfTypeKitID}
+                    font:14px "{text:TypeKit Font}", Helvetica Neue, Arial, sans-serif;
+                {/block:IfTypeKitID}
                 color: {color:Text};
                 background-color: {BackgroundColor};
                 background-image: url({image:Background Image});
